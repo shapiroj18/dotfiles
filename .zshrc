@@ -1,7 +1,3 @@
-# used for adding the `color` command to path of the following repo
-# https://github.com/shapiroj18/terminal_colors
-export PATH=$PATH":$HOME/bin"
-
 # gets wifi password easily 
 alias wifi="security find-generic-password -wa Fios-FNK2Y"
 
