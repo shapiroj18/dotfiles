@@ -9,3 +9,8 @@ alias pi="ssh pi@192.168.1.7"
 function rmbr() {
     git branch | grep -i $1 | xargs git branch -D
 }
+
+# sets GO Path so that you can run executables 
+# https://stackoverflow.com/questions/36083542/error-command-not-found-after-installing-go-eval
+export GOPATH="$HOME/go"
+PATH="$GOPATH/bin:$PATH"
