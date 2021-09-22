@@ -1,6 +1,6 @@
 # rc-configs
 
-This repository holds configuration files for shell, vim, etc.
+This repository holds configuration files for shell, vim, crontab etc.
 
 ## .zshrc
 ZSH configuration. On mac: 
