@@ -1,0 +1,1 @@
+0 8 * * * cd ~/Desktop/Git/weather-app >> ~/Desktop/logs/weather-app.log 2>&1 && . venv/bin/activate >> ~/Desktop/logs/weather-app.log 2>&1 && python weather_notifications.py >> ~/Desktop/logs/weather-app.log 2>&1
