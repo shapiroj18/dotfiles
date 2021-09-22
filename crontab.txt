@@ -1,1 +1,5 @@
+# send weather notifications
 0 8 * * * cd ~/Desktop/Git/weather-app >> ~/Desktop/logs/weather-app.log 2>&1 && . venv/bin/activate >> ~/Desktop/logs/weather-app.log 2>&1 && python weather_notifications.py >> ~/Desktop/logs/weather-app.log 2>&1
+
+# send chore notifactions
+0 10 * * 4 cd Desktop/Git/chores-chart-bedford >> ~/Desktop/logs/chores.log 2>&1 && git pull >> ~/Desktop/logs/chores.log 2>&1 && go run chores.go >> ~/Desktop/logs/chores.log 2>&1
