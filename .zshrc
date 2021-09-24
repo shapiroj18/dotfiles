@@ -1,3 +1,7 @@
+# set prompt
+# documentation of prompt options can be found here - https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html#Prompt-Expansion
+PROMPT=%B%T%b' '%2d%B' $ '%b
+
 # gets wifi password easily 
 alias wifi="security find-generic-password -wa Fios-FNK2Y"
 
