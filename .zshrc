@@ -18,3 +18,6 @@ function rmbr() {
 # https://stackoverflow.com/questions/36083542/error-command-not-found-after-installing-go-eval
 export GOPATH="$HOME/go"
 PATH="$GOPATH/bin:$PATH"
+
+# sets up tmux shell with random color, asciiart and cbonsai
+alias mux="cd ~/Desktop/Git/dotfiles && chmod +x ./bin/tmux_start.sh && ./bin/tmux_start.sh"
