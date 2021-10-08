@@ -8,3 +8,8 @@ ZSH configuration. On mac:
 2. `echo "source $PWD/.zshrc" >> ~/.zshrc` to activate the file in your `zshrc`. 
 
 Note that this appends this command to your setup, so you can add multiple config files if needed.
+
+## .vimrc
+`echo :so <path to vimrc in this repo> >> ~/.vimrc`
+
+Note that this appends this command to your setup, so you can add multiple config files if needed.
