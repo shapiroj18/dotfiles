@@ -4,7 +4,9 @@ set belloff=all
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set smartindent
-set nu
+set noswapfile
+set number
+set relativenumber
 set nowrap
 set incsearch
 
@@ -14,10 +16,20 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-fugitive'
 Plug 'vim-utils/vim-man'
-Plug 
 
 call plug#end()
 
 colorscheme gruvbox
 set background=dark
+
+let mapleader = " "
+let g:netrw_banner = 0
+
+nnoremap <leader>h :wincmd h<CR>
+nnoremap <leader>j :wincmd j<CR>
+nnoremap <leader>k :wincmd k<CR>
+nnoremap <leader>l :wincmd l<CR>
+nnoremap <leader>pv :wincmd v<bar> :Ex<bar> :vertical resize 30<CR>
+

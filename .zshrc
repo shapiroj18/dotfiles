@@ -1,6 +1,12 @@
+# set window size
+printf '\e[8;50;150t'
+
+# set increased font size
+# done in terminal > preferences on mac terminal
+
 # set prompt
 # documentation of prompt options can be found here - https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html#Prompt-Expansion
-PROMPT=%B%T%b' '%2d%B' $ '%b
+PROMPT=%B%T%b' '%2~%B' $ '%b
 
 # gets wifi password easily 
 alias wifi="security find-generic-password -wa Fios-FNK2Y"
