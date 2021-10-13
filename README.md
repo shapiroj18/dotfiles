@@ -26,6 +26,8 @@ In your `~/.vimrc`:
 `:so <path to vimrc>`
 For example, use `:so ~/Desktop/Git/dotfiles/.vimrc`
 
+You also need to download [vim-plug](https://github.com/junegunn/vim-plug#unix) and the first time you add the `~/.vimrc` above `:PlugInstall` <br />
+
 Note that this appends this command to your setup, so you can add multiple config files if needed.
 
 ## .zshrc
