@@ -17,6 +17,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
 Plug 'preservim/nerdcommenter'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
@@ -27,11 +28,11 @@ let mapleader = " "
 let g:netrw_banner = 0
 let g:NERDCreateDefaultMappings = 1
 let g:NERDSpaceDelims = 1
-
+let NERDTreeShowHidden=1
 
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
-nnoremap <leader>pv :wincmd v<bar> :Ex<bar> :vertical resize 30<CR>
-
+nnoremap <leader>d :NERDTree<CR>
+nnoremap <leader>dd :NERDTreeClose<CR>
