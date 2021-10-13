@@ -16,8 +16,7 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
-Plug 'tpope/vim-fugitive'
-Plug 'vim-utils/vim-man'
+Plug 'preservim/nerdcommenter'
 
 call plug#end()
 
@@ -26,6 +25,9 @@ set background=dark
 
 let mapleader = " "
 let g:netrw_banner = 0
+let g:NERDCreateDefaultMappings = 1
+let g:NERDSpaceDelims = 1
+
 
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
