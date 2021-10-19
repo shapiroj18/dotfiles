@@ -10,6 +10,7 @@ set relativenumber
 set nowrap
 set incsearch
 set colorcolumn=80
+set backspace=indent,eol,start
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.vim/plugged')
@@ -37,3 +38,9 @@ nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>d :NERDTree<CR>
 nnoremap <leader>dd :NERDTreeClose<CR>
+" Note that for commenting and uncommenting do <leader>ci
+
+" YouCompleteMe Configs
+nnoremap <silent> <leader>gd :YcmCompleter GoTo<CR>
+let g:ycm_auto_hover = ''
+nmap <leader>de <plug>(YCMHover)
