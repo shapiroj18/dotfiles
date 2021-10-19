@@ -9,7 +9,6 @@ set number
 set relativenumber
 set nowrap
 set incsearch
-
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
@@ -18,6 +17,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
+Plug 'ycm-core/YouCompleteMe'
 
 call plug#end()
 
