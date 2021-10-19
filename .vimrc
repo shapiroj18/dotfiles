@@ -30,6 +30,7 @@ let g:NERDCreateDefaultMappings = 1
 let g:NERDSpaceDelims = 1
 let NERDTreeShowHidden=1
 
+inoremap jk <esc>
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
