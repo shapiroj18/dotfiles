@@ -27,3 +27,6 @@ PATH="$GOPATH/bin:$PATH"
 
 # sets up tmux shell with random color, asciiart and cbonsai
 alias mux="cd ~/Desktop/Git/dotfiles && chmod +x ./bin/tmux_start.sh && ./bin/tmux_start.sh"
+
+# alias python to python3 for mac so it doesn't use python2. note it will pull whatever python3 is on $PATH
+alias python="python3"
