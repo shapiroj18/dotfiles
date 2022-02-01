@@ -1,6 +1,3 @@
-# set window size
-printf '\e[8;50;150t'
-
 # set increased font size
 # done in terminal > preferences on mac terminal
 
