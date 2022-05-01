@@ -17,10 +17,17 @@ function rmbr() {
     git branch | grep -i $1 | xargs git branch -D
 }
 
+# see ports being used
+function ports() {
+    lsof -i -P -n | grep LISTEN
+}
+
 # sets GO Path so that you can run executables 
 # https://stackoverflow.com/questions/36083542/error-command-not-found-after-installing-go-eval
 export GOPATH="$HOME/go"
 PATH="$GOPATH/bin:$PATH"
+export PATH=$(brew --prefix openvpn)/sbin:$PATH
+PATH="/usr/local/opt/sqlite/bin:$PATH"
 
 # sets up tmux shell with random color, asciiart and cbonsai
 alias mux="cd ~/Desktop/Git/dotfiles && chmod +x ./bin/tmux_start.sh && ./bin/tmux_start.sh"
