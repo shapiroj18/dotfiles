@@ -12,6 +12,7 @@ set incsearch
 set colorcolumn=80
 set backspace=indent,eol,start
 set scrolloff=8
+set wrap linebreak
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.vim/plugged')
