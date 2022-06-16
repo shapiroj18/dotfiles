@@ -29,6 +29,9 @@ PATH="$GOPATH/bin:$PATH"
 export PATH=$(brew --prefix openvpn)/sbin:$PATH
 PATH="/usr/local/opt/sqlite/bin:$PATH"
 
+# sets ruby path so mac ruby isn't used at command line
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 # sets up tmux shell with random color, asciiart and cbonsai
 alias mux="cd ~/Desktop/Git/dotfiles && chmod +x ./bin/tmux_start.sh && ./bin/tmux_start.sh"
 
