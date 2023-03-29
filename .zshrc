@@ -3,7 +3,11 @@
 
 # set prompt
 # documentation of prompt options can be found here - https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html#Prompt-Expansion
-PROMPT=%B%T%b' '%2~%B' $ '%b
+parse_git_branch() {
+        git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+}
+
+PROMPT=%B%T%b' '%2~%B' '$(parse_git_branch)$'\n''$ '%b
 
 # gets wifi password easily 
 alias wifi="security find-generic-password -wa Fios-FNK2Y"
